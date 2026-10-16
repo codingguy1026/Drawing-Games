@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing Games | 홈 레이아웃</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Drawing Games</h1>
+      <nav class="site-nav" aria-label="주 메뉴">
+        <a href="index.html" aria-current="page">홈</a>
+        <a href="#games">게임 목록</a>
+        <a href="#rooms">게임방</a>
+      </nav>
+    </header>
+
+    <div class="page-layout">
+      <main class="main-column" id="main">
+        <section id="games" aria-labelledby="games-heading">
+          <h2 id="games-heading">게임 목록</h2>
+          <div class="game-list">
+            <article>
+              <h3>바둑공원</h3>
+              <p>기존 프로젝트 복원 준비 중</p>
+              <button type="button" disabled>준비 중</button>
+            </article>
+            <article>
+              <h3>추가 게임 자리</h3>
+              <p>추후 등록</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="rooms" aria-labelledby="rooms-heading">
+          <h2 id="rooms-heading">공개 게임방</h2>
+          <p>실제 게임방 목록과 연결되지 않은 예시 영역입니다.</p>
+          <div class="room-list">
+            <article class="room-item">
+              <div>
+                <h3>예시 게임방</h3>
+                <p>게임: 미정 · 참가자: 예시</p>
+              </div>
+              <a href="room.html">대기실 레이아웃 보기</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <aside class="side-column" aria-label="보조 영역">
+        <section aria-labelledby="create-heading">
+          <h2 id="create-heading">게임방 만들기</h2>
+          <div class="field-list">
+            <label class="form-field">
+              방 이름
+              <input type="text" placeholder="방 이름" disabled>
+            </label>
+            <label class="form-field">
+              게임 선택
+              <select disabled>
+                <option>게임 선택</option>
+              </select>
+            </label>
+            <button type="button" disabled>방 만들기 (미구현)</button>
+          </div>
+        </section>
+        <section aria-labelledby="profile-heading">
+          <h2 id="profile-heading">내 정보</h2>
+          <p>프로필 및 접속 상태가 표시될 자리</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <p>화면 배치만 확인하는 와이어프레임입니다. 게임 및 멀티플레이 기능은 없습니다.</p>
+    </footer>
+  </div>
+</body>
+</html>
