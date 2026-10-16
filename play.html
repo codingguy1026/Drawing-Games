@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing Games | 플레이 레이아웃</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Drawing Games</h1>
+      <nav class="site-nav" aria-label="주 메뉴">
+        <a href="index.html">홈</a>
+        <a href="room.html">대기실</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>게임 플레이</h2>
+      <div class="page-layout">
+        <div class="main-column">
+          <section aria-labelledby="status-heading">
+            <h3 id="status-heading">게임 진행 정보</h3>
+            <p>게임 이름 · 진행 상태 · 시간 · 점수</p>
+          </section>
+          <section aria-labelledby="stage-heading">
+            <h3 id="stage-heading">게임 화면</h3>
+            <div class="play-area" aria-label="게임 콘텐츠가 들어갈 영역">
+              <p>게임 콘텐츠 위치 (미구현)</p>
+            </div>
+          </section>
+          <section aria-labelledby="controls-heading">
+            <h3 id="controls-heading">게임 조작</h3>
+            <div class="actions">
+              <button type="button" disabled>게임별 조작</button>
+              <button type="button" disabled>일시정지</button>
+              <a href="room.html">대기실 레이아웃으로 돌아가기</a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side-column" aria-label="플레이 보조 영역">
+          <section>
+            <h3>참가자</h3>
+            <ul>
+              <li>참가자 1</li>
+              <li>참가자 2</li>
+            </ul>
+          </section>
+          <section>
+            <h3>음성방</h3>
+            <p>음성 상태가 표시될 자리</p>
+            <button type="button" disabled>마이크 설정</button>
+          </section>
+          <section>
+            <h3>채팅</h3>
+            <p>채팅 메시지가 표시될 자리</p>
+            <label class="form-field">
+              메시지
+              <input type="text" placeholder="메시지 입력" disabled>
+            </label>
+            <button type="button" disabled>전송</button>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer"><p>플레이 레이아웃 예시 · 게임 로직 없음</p></footer>
+  </div>
+</body>
+</html>
