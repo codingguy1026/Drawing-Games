@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawing Games | 게임 대기실 레이아웃</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Drawing Games</h1>
+      <nav class="site-nav" aria-label="주 메뉴">
+        <a href="index.html">홈</a>
+        <a href="index.html#games">게임 목록</a>
+        <a href="index.html#rooms">게임방</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>게임 대기실</h2>
+      <p>방 이름: 예시 게임방</p>
+      <div class="page-layout">
+        <div class="main-column">
+          <section aria-labelledby="members-heading">
+            <h3 id="members-heading">참가자 목록</h3>
+            <ul>
+              <li>참가자 1 (방장)</li>
+              <li>참가자 2 (빈자리 예시)</li>
+              <li>참가자 3 (빈자리 예시)</li>
+              <li>참가자 4 (빈자리 예시)</li>
+            </ul>
+          </section>
+          <section aria-labelledby="room-actions-heading">
+            <h3 id="room-actions-heading">대기실 조작</h3>
+            <div class="actions">
+              <button type="button" disabled>준비</button>
+              <button type="button" disabled>게임 시작</button>
+              <a href="play.html">플레이 레이아웃 보기</a>
+              <a href="index.html">대기실 나가기</a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side-column" aria-label="방 정보와 소통">
+          <section>
+            <h3>게임 정보</h3>
+            <p>선택한 게임의 규칙과 설정이 표시될 자리</p>
+          </section>
+          <section>
+            <h3>음성방</h3>
+            <p>참가자 음성 상태가 표시될 자리</p>
+            <button type="button" disabled>마이크 설정</button>
+          </section>
+          <section>
+            <h3>채팅</h3>
+            <div aria-label="채팅 메시지 영역">
+              <p>메시지가 표시될 자리</p>
+            </div>
+            <label class="form-field">
+              메시지
+              <input type="text" placeholder="메시지 입력" disabled>
+            </label>
+            <button type="button" disabled>전송</button>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer"><p>대기실 레이아웃 예시 · 실시간 연결 없음</p></footer>
+  </div>
+</body>
+</html>
