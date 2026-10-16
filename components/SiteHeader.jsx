@@ -17,7 +17,7 @@ export default function SiteHeader() {
     <header className="site-header glass-panel">
       <div className="site-container header-inner">
         <Link className="brand" href="/" aria-label="Drawing Games 홈">
-          <Image className="brand-logo-image" src="/branding/drawing-games-logo.png" alt="" width={54} height={33} priority />
+          <Image className="brand-logo-image" src="/branding/drawing-games-logo.svg" alt="" width={54} height={33} priority />
           <span className="brand-name">Drawing<span>Games</span></span>
           <span className="brand-beta">PREVIEW</span>
         </Link>

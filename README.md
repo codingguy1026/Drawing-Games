@@ -42,4 +42,4 @@ The user's original April 28 HTML had a `바둑판(개발중)` menu link, naviga
 
 ## Branding
 
-The official DG gaming logo is stored at `public/branding/drawing-games-logo.png` (transparent, web-optimized). `SiteHeader` and the home hero both use it; the old placeholder logo and decorative orbit rings are no longer shown.
+The official DG gaming logo is stored at `public/branding/drawing-games-logo.svg` (transparent, resolution-independent SVG recreation). `SiteHeader` and the home hero both use it; the old placeholder logo and decorative orbit rings are no longer shown.

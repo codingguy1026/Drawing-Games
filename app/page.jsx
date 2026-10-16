@@ -19,7 +19,7 @@ export default function HomePage() {
           <span className="hero-caption">현재는 화면 디자인만 체험할 수 있어요.</span>
         </div>
         <div className="hero-art" aria-hidden="true">
-          <Image className="hero-logo-image" src="/branding/drawing-games-logo.png" alt="" width={320} height={195} priority />
+          <Image className="hero-logo-image" src="/branding/drawing-games-logo.svg" alt="" width={320} height={195} priority />
         </div>
       </section>
 

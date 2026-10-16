@@ -8,7 +8,7 @@ export const metadata = {
     template: "%s | Drawing Games",
   },
   description: "다양한 미니게임을 함께 즐기는 Drawing Games 플랫폼. 현재는 UI 미리보기 단계입니다.",
-  icons: { icon: "/branding/drawing-games-logo.png" },
+  icons: { icon: "/branding/drawing-games-logo.svg" },
 };
 
 export default function RootLayout({ children }) {

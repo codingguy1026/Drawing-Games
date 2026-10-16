@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="140 110 1260 820" role="img" aria-labelledby="title">
+<title id="title">Drawing Games DG logo</title>
+<defs>
+<linearGradient id="green" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#009bc5"/><stop offset=".4" stop-color="#10bdb0"/><stop offset=".8" stop-color="#65d67a"/><stop offset="1" stop-color="#9fe85b"/></linearGradient>
+<linearGradient id="red" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ed2047"/><stop offset=".55" stop-color="#ff2937"/><stop offset="1" stop-color="#ff3938"/></linearGradient>
+<linearGradient id="redShine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8b71" stop-opacity=".35"/><stop offset="1" stop-color="#e20643" stop-opacity=".06"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+<clipPath id="gClip"><path d="M 846,376 L 1235,376 L 1209,474 L 895,474 L 895,539 L 820,539 L 820,727 L 875,729 L 875,769 L 1017,769 L 1017,669 L 902,669 L 902,606 L 945,606 L 946,579 L 1214,579 L 1180,846 L 797,846 L 797,796 L 748,796 L 748,738 L 662,738 L 661,704 L 705,673 L 744,639 L 768,609 L 791,572 L 815,519 L 831,470 L 842,419 Z"/></clipPath>
+<clipPath id="dClip"><path fill-rule="evenodd" d="M 393,200 L 673,200 C 796,200 845,266 846,366 C 846,532 767,687 613,721 C 592,728 571,733 553,734 H 242 Z M 521,329 L 445,616 H 532 C 606,616 644,554 663,503 C 676,462 684,416 681,377 C 679,346 662,329 633,329 Z"/></clipPath>
+</defs>
+<g filter="url(#glow)" opacity=".28">
+<path fill="#3ce78d" d="M 846,376 L 1235,376 L 1209,474 L 895,474 L 895,539 L 820,539 L 820,727 L 875,729 L 875,769 L 1017,769 L 1017,669 L 902,669 L 902,606 L 945,606 L 946,579 L 1214,579 L 1180,846 L 797,846 L 797,796 L 748,796 L 748,738 L 662,738 L 661,704 Z"/>
+<path fill="#ff2635" d="M 393,200 H 673 C 796,200 845,266 846,366 C 846,532 767,687 613,721 C 592,728 571,733 553,734 H 242 Z"/>
+</g>
+<path fill="url(#green)" d="M 846,376 L 1235,376 L 1209,474 L 895,474 L 895,539 L 820,539 L 820,727 L 875,729 L 875,769 L 1017,769 L 1017,669 L 902,669 L 902,606 L 945,606 L 946,579 L 1214,579 L 1180,846 L 797,846 L 797,796 L 748,796 L 748,738 L 662,738 L 661,704 L 705,673 L 744,639 L 768,609 L 791,572 L 815,519 L 831,470 L 842,419 Z"/>
+<g clip-path="url(#gClip)" opacity=".25">
+<path fill="#fff" d="M 846,376 H 1235 L 1055,475 H 895 Z"/>
+<path fill="#0766ce" d="M 661,704 H 875 V 846 H 797 V 796 H 748 V 738 H 661 Z"/>
+<path fill="#7fff60" d="M 1108,579 H 1214 L 1180,846 H 1050 Z"/>
+</g>
+<path fill="#63ce81" opacity=".75" d="M 1287,457 L 1338,457 L 1326,510 H 1277 Z M 1223,518 H 1262 L 1250,559 H 1211 Z M 1270,565 H 1305 L 1293,596 H 1260 Z"/>
+<path fill-rule="evenodd" fill="url(#red)" d="M 393,200 L 673,200 C 796,200 845,266 846,366 C 846,532 767,687 613,721 C 592,728 571,733 553,734 H 242 Z M 521,329 L 445,616 H 532 C 606,616 644,554 663,503 C 676,462 684,416 681,377 C 679,346 662,329 633,329 Z"/>
+<g clip-path="url(#dClip)">
+<path fill="url(#redShine)" d="M 393,200 L 673,200 L 393,314 Z"/>
+<path fill="#ad043d" opacity=".13" d="M 242,734 L 486,734 L 846,366 L 762,611 L 553,734 Z"/>
+<path fill="#ff7d6a" opacity=".14" d="M 393,200 H 673 L 393,315 Z"/>
+</g>
+<path fill="#fff" d="M 1182,603 L 1041,667 L 1103,666 L 1066,745 L 1113,737 L 1079,822 L 1184,688 L 1125,696 Z"/>
+</svg>
