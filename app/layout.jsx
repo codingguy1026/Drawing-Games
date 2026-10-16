@@ -1,0 +1,27 @@
+import "./globals.css";
+import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
+
+export const metadata = {
+  title: {
+    default: "Drawing Games | 함께 즐기는 게임",
+    template: "%s | Drawing Games",
+  },
+  description: "다양한 미니게임을 함께 즐기는 Drawing Games 플랫폼. 현재는 UI 미리보기 단계입니다.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="ko">
+      <body>
+        <div className="app-shell">
+          <SiteHeader />
+          <main id="main-content" className="site-container site-main">
+            {children}
+          </main>
+          <SiteFooter />
+        </div>
+      </body>
+    </html>
+  );
+}

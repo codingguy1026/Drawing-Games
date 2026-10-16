@@ -1,17 +1,28 @@
 # Drawing Games 🎮
 
-Formerly **모여!**. This repository will host the Drawing Games platform.
+Formerly **모여!**. Drawing Games is a multi-game party platform, not a single game.
 
-## Layout prototype (unstyled)
+## Start the Next.js project
 
-Open `index.html` in a browser. The three static layouts link to each other:
+Requirements: Node.js 20.9+ and npm.
 
-- `index.html`: game list, public rooms, room creation slot, profile slot.
-- `room.html`: waiting room, participant list, voice/chat slots, ready/start controls.
-- `play.html`: game area, game status, participants, voice/chat slots.
-- `layout.css`: layout-only CSS for placement and responsive columns. No theme, typography, colors, backgrounds, borders or effects.
+```bash
+npm install
+npm run dev
+```
 
-These are non-functional wireframes. Disabled controls are intentional. No server, real rooms, chat, voice, matchmaking or game engine is included. The preserved Baduk Park legacy snippets remain untouched.
+Open [http://localhost:3000](http://localhost:3000). In GitHub Codespaces, open the forwarded port 3000 instead.
+
+The Next.js **App Router** pages are:
+
+- `/`: homepage, game teasers, room preview and future room-creation controls.
+- `/games`: expandable game catalog, sourced from `lib/catalog.js`.
+- `/room`: waiting room UI preview.
+- `/play`: play-area UI preview.
+
+Shared components live under `components/`. Styles live in `app/globals.css`, using the Pretendard and dark indigo CSS concept provided for this project.
+
+**UI only:** No login, functioning rooms, multiplayer, audio, chat or games have been implemented. All unfinished actions are disabled, and preview links are explicitly labeled. The old HTML/CSS-only layout was moved into `wireframes/` for reference.
 
 ## 🌳 바둑공원 (Baduk Park)
 
