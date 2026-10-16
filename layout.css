@@ -1,0 +1,19 @@
+/* Drawing Games wireframe.
+   Layout rules only: no visual design, theme, fonts, colors, borders or effects. */
+* { box-sizing: border-box; }
+body { margin: 0; }
+.page { width: min(100% - 2rem, 1200px); margin-inline: auto; }
+.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-block: 1rem; }
+.site-nav, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.page-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(14rem, 17rem); gap: 2rem; align-items: start; }
+.main-column, .side-column, .room-list, .field-list { display: grid; gap: 1.5rem; }
+.game-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1.5rem; }
+.room-item { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.form-field { display: grid; gap: 0.25rem; }
+input, select, textarea { max-width: 100%; }
+textarea { width: 100%; }
+.play-area { min-height: 24rem; display: grid; place-items: center; }
+.site-footer { padding-block: 2rem; }
+@media (max-width: 720px) {
+  .page-layout { grid-template-columns: minmax(0, 1fr); }
+}
