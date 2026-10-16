@@ -2,6 +2,17 @@
 
 Formerly **모여!**. This repository will host the Drawing Games platform.
 
+## Layout prototype (unstyled)
+
+Open `index.html` in a browser. The three static layouts link to each other:
+
+- `index.html`: game list, public rooms, room creation slot, profile slot.
+- `room.html`: waiting room, participant list, voice/chat slots, ready/start controls.
+- `play.html`: game area, game status, participants, voice/chat slots.
+- `layout.css`: layout-only CSS for placement and responsive columns. No theme, typography, colors, backgrounds, borders or effects.
+
+These are non-functional wireframes. Disabled controls are intentional. No server, real rooms, chat, voice, matchmaking or game engine is included. The preserved Baduk Park legacy snippets remain untouched.
+
 ## 🌳 바둑공원 (Baduk Park)
 
 Original project: **바둑공원 with 서동 바둑학원** (2023).
