@@ -254,3 +254,10 @@ h1, h2, h3 { line-height: 1.25; }
   .game-card-hover, .btn, .nav-link { transition: none; }
   .game-card-hover:hover, .btn:not(:disabled):hover { transform: none; }
 }
+
+/* Official Drawing Games mark: transparent artwork, no orbit decorations. */
+.brand-logo-image { display: block; width: 54px; height: auto; flex-shrink: 0; }
+.hero-logo-image { display: block; width: min(100%, 320px); height: auto; object-fit: contain; }
+@media (max-width: 560px) {
+  .brand-logo-image { width: 48px; }
+}

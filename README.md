@@ -39,3 +39,7 @@ Only two exact **code excerpts quoted in earlier ChatGPT messages** have been re
 The user's original April 28 HTML had a `바둑판(개발중)` menu link, navigation dropdown behavior, and a `getNews()` function that loaded `news.json`. However, its complete verbatim HTML source is **not yet available** for upload. Missing HTML, CSS, images and server code have **not** been fabricated.
 
 **These snippets are not a runnable website.** The historical files will be restored separately if their full source becomes available. Rebuilding or modernizing the game can then happen in `games/baduk-park/` without overwriting the archive.
+
+## Branding
+
+The official DG gaming logo is stored at `public/branding/drawing-games-logo.png` (transparent, web-optimized). `SiteHeader` and the home hero both use it; the old placeholder logo and decorative orbit rings are no longer shown.

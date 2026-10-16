@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import GameCard from "../components/GameCard";
 import PreviewNotice from "../components/PreviewNotice";
 import { games } from "../lib/catalog";
@@ -18,11 +19,7 @@ export default function HomePage() {
           <span className="hero-caption">현재는 화면 디자인만 체험할 수 있어요.</span>
         </div>
         <div className="hero-art" aria-hidden="true">
-          <div className="hero-orbit orbit-one" />
-          <div className="hero-orbit orbit-two" />
-          <div className="hero-center">DG<span>GAMES</span></div>
-          <div className="hero-spark spark-one">✦</div>
-          <div className="hero-spark spark-two">✳</div>
+          <Image className="hero-logo-image" src="/branding/drawing-games-logo.png" alt="" width={320} height={195} priority />
         </div>
       </section>
 
