@@ -1,4 +1,6 @@
+import Script from "next/script";
 import "./globals.css";
+import "./liquid-refraction.css";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
           </main>
           <SiteFooter />
         </div>
+        <Script src="/liquid-refraction.js" strategy="afterInteractive" />
       </body>
     </html>
   );
