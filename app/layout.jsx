@@ -1,5 +1,7 @@
 import Script from "next/script";
 import "./globals.css";
+import "./drawing-id.css";
+import DrawingIdAuth from "../components/DrawingIdAuth";
 import "./liquid-refraction.css";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
         <div className="app-shell">
           <SiteHeader />
           <main id="main-content" className="site-container site-main">
-            {children}
+            {children}<DrawingIdAuth />
           </main>
           <SiteFooter />
         </div>
