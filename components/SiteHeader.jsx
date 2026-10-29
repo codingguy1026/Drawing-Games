@@ -6,22 +6,23 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   { href: "/", title: "홈" },
-  { href: "/games", title: "게임 목록" },
-  { href: "/room", title: "대기실 미리보기" },
+  { href: "/games", title: "게임 탐색" },
+  { href: "/room", title: "대기실" },
+  { href: "/play", title: "플레이 화면" },
 ];
 
 export default function SiteHeader() {
   const pathname = usePathname();
-
   return (
     <header className="site-header glass-panel">
-      <div className="site-container header-inner">
-        <Link className="brand" href="/" aria-label="Drawing Games 홈">
-          <Image className="brand-logo-image" src="/branding/drawing-games-logo.svg" alt="" width={54} height={33} priority />
-          <span className="brand-name">Drawing<span>Games</span></span>
-          <span className="brand-beta">PREVIEW</span>
+      <div className="site-container header-inner pg-header-inner">
+        <Link className="brand pg-brand" href="/" aria-label="Drawing Games 홈">
+          <span className="pg-brand-icon">
+            <Image className="brand-logo-image" src="/branding/drawing-games-logo.svg" alt="" width={48} height={32} priority />
+          </span>
+          <span className="pg-brand-copy"><span className="brand-name">Drawing <span>Games</span></span><span className="pg-brand-caption">PLAY TOGETHER</span></span>
         </Link>
-        <nav className="nav-links" aria-label="주 메뉴">
+        <nav className="nav-links pg-nav-links" aria-label="주 메뉴">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -33,7 +34,7 @@ export default function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <span className="header-status">● UI 개발 중</span>
+        <span className="pg-header-badge"><span className="pg-signal" /> PREVIEW</span>
       </div>
     </header>
   );

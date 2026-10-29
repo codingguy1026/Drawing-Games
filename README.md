@@ -1,45 +1,43 @@
 # Drawing Games 🎮
 
-Formerly **모여!**. Drawing Games is a multi-game party platform, not a single game.
+Formerly **모여!**. Drawing Games is a planned multi-game party platform, not a single game.
 
-## Start the Next.js project
+## Local development
 
-Requirements: Node.js 20.9+ and npm.
+Requires Node.js 20.9+ and npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). In GitHub Codespaces, open the forwarded port 3000 instead.
+Open http://localhost:3000 (or port 3000's forwarded preview in GitHub Codespaces).
 
-The Next.js **App Router** pages are:
+## Project PLAYGROUND
 
-- `/`: homepage, game teasers, room preview and future room-creation controls.
-- `/games`: expandable game catalog, sourced from `lib/catalog.js`.
-- `/room`: waiting room UI preview.
-- `/play`: play-area UI preview.
+The first redesign pass adds a richer, responsive homepage and navigation inspired by Drawing Verse's glass surfaces, but with its own arcade identity. It uses the existing official DG logo and CSS-built lobby illustration.
 
-Shared components live under `components/`. Styles live in `app/globals.css`, using the Pretendard and dark indigo CSS concept provided for this project.
+Routes:
+- `/`: redesigned home with featured *planned* game concepts, room/play previews, and a roadmap.
+- `/games`: expandable game catalog sourced from `lib/catalog.js`.
+- `/room`: waiting-room UI **preview**.
+- `/play`: play-stage UI **preview**.
 
-**UI only:** No login, functioning rooms, multiplayer, audio, chat or games have been implemented. All unfinished actions are disabled, and preview links are explicitly labeled. The old HTML/CSS-only layout was moved into `wireframes/` for reference.
+**Important:** These routes are visual prototypes, not a working gaming platform. There are currently no playable games, live rooms, real-time multiplayer, voice channels or game chat. The account interface exists separately; do not mistake it for game session support. Game concepts in the catalog have not been shipped. The old wireframes remain in `wireframes/`.
+
+The redesign's scoped styles are in `app/playground.css`, added after the existing global styles so the room and play previews continue using their earlier structures.
 
 ## 🌳 바둑공원 (Baduk Park)
 
 Original project: **바둑공원 with 서동 바둑학원** (2023).
 Historical Replit address: `paduk-park.coolhanhee.repl.co` (may no longer work).
 
-### Preservation status
+Only two historical code excerpts are preserved in `games/baduk-park/legacy/`:
+- `2023-sidebar-snippet.js`: sidebar hover code quoted in an April 2023 conversation.
+- `2023-jinja-board-snippet.html`: Jinja2 example from a later assistant proposal, not an original April 28 file.
 
-Only two exact **code excerpts quoted in earlier ChatGPT messages** have been recovered so far. They are kept unmodified in `games/baduk-park/legacy/`.
-
-- `2023-sidebar-snippet.js`: sidebar hover JavaScript quoted from an April 2023 conversation. **Excerpt only; provenance of the full original file is unverified.**
-- `2023-jinja-board-snippet.html`: 19×19 Jinja2 template excerpt from a **later assistant-proposed example**, **not** part of the user's original April 28 HTML.
-
-The user's original April 28 HTML had a `바둑판(개발중)` menu link, navigation dropdown behavior, and a `getNews()` function that loaded `news.json`. However, its complete verbatim HTML source is **not yet available** for upload. Missing HTML, CSS, images and server code have **not** been fabricated.
-
-**These snippets are not a runnable website.** The historical files will be restored separately if their full source becomes available. Rebuilding or modernizing the game can then happen in `games/baduk-park/` without overwriting the archive.
+These snippets are **not a runnable game**; the complete original HTML, CSS, image assets and server code have not been recovered. Do not overwrite the historical snippets when rebuilding.
 
 ## Branding
 
-The official DG gaming logo is stored at `public/branding/drawing-games-logo.svg` (transparent, resolution-independent SVG recreation). `SiteHeader` and the home hero both use it; the old placeholder logo and decorative orbit rings are no longer shown.
+The official Drawing Games logo is `public/branding/drawing-games-logo.svg`.

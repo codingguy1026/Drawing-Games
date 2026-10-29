@@ -1,8 +1,9 @@
 import Script from "next/script";
 import "./globals.css";
 import "./drawing-id.css";
-import DrawingIdAuth from "../components/DrawingIdAuth";
 import "./liquid-refraction.css";
+import "./playground.css";
+import DrawingIdAuth from "../components/DrawingIdAuth";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 
@@ -11,7 +12,7 @@ export const metadata = {
     default: "Drawing Games | 함께 즐기는 게임",
     template: "%s | Drawing Games",
   },
-  description: "다양한 미니게임을 함께 즐기는 Drawing Games 플랫폼. 현재는 UI 미리보기 단계입니다.",
+  description: "다양한 파티 게임이 모이는 Drawing Games. Project PLAYGROUND 디자인 미리보기 단계입니다.",
   icons: { icon: "/branding/drawing-games-logo.svg" },
 };
 
