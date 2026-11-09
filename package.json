@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test games/baduk-park/*.test.js && node scripts/sync-baduk.mjs --check",
+    "baduk:sync": "node scripts/sync-baduk.mjs",
+    "prebuild": "node scripts/sync-baduk.mjs --check",
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start -H 0.0.0.0"

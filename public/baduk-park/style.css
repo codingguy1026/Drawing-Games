@@ -1,0 +1,70 @@
+:root { font-family: system-ui, sans-serif; color: #26372d; background: #f4f6f1; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { background: #214a38; color: white; padding: 25px 18px; }
+header .inner, nav .inner, main { max-width: 980px; margin: auto; }
+h1 { margin: 0; font-size: clamp(28px, 5vw, 38px); }
+header p { margin: 8px 0 0; color: #d8e7db; font-size: 14px; }
+nav { background: #2d5b44; }
+nav .inner { display: flex; gap: 6px; padding: 7px 14px; }
+nav a { color: white; text-decoration: none; padding: 9px 15px; border-radius: 7px; font-weight: 600; }
+nav a:hover, nav a:focus-visible { background: #43785b; }
+main { padding: 22px 16px 40px; }
+section { background: white; border: 1px solid #dce5d9; border-radius: 14px; padding: clamp(14px, 3vw, 25px); margin-bottom: 20px; }
+h2 { margin: 0 0 14px; }
+p, li { line-height: 1.6; }
+.description { color: #526458; font-size: 14px; }
+.notice { background: #f6f2df; padding: 12px; border-radius: 8px; font-size: 14px; }
+.settings, .controls { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; }
+label { display: inline-flex; flex-direction: column; gap: 6px; font-size: 14px; margin-bottom: 10px; }
+select, input, button { font: inherit; }
+select, input { padding: 8px; border: 1px solid #7b8c7f; border-radius: 7px; max-width: 100%; }
+input { width: 95px; }
+button { background: #214a38; color: white; border: 1px solid #214a38; border-radius: 9px; padding: 10px 14px; font-weight: 600; cursor: pointer; }
+.settings button { margin-bottom: 10px; }
+button.secondary { background: white; color: #214a38; }
+button:disabled { opacity: .5; cursor: default; }
+.controls { margin: 16px 0; align-items: center; }
+.turn { font-weight: 700; min-height: 26px; }
+.error { color: #a32020; min-height: 24px; }
+.board-shell { max-width: 640px; margin: auto; }
+.board { width: 100%; aspect-ratio: 1; background: #d9ab66; border: 8px solid #a7783d; border-radius: 9px; display: grid; padding: 3.2%; box-shadow: 0 5px 0 #8f642f; }
+.point { position: relative; min-width: 0; min-height: 0; border: 0; border-radius: 0; background: transparent; padding: 0; touch-action: manipulation; }
+.point::before, .point::after { content: ""; position: absolute; background: #77552d; pointer-events: none; }
+.point::before { height: 1px; top: 50%; left: 0; right: 0; }
+.point::after { width: 1px; left: 50%; top: 0; bottom: 0; }
+.point.left::before { left: 50%; }
+.point.right::before { right: 50%; }
+.point.top::after { top: 50%; }
+.point.bottom::after { bottom: 50%; }
+.point.star:not(.occupied) .dot { position: absolute; width: 19%; height: 19%; background: #70502c; border-radius: 50%; left: 40.5%; top: 40.5%; pointer-events: none; }
+.stone { position: absolute; z-index: 2; inset: 2%; border-radius: 50%; box-shadow: 0 1px 3px #0007; pointer-events: none; }
+.stone.black { background: radial-gradient(circle at 30% 25%, #555, #101010 70%); }
+.stone.white { background: radial-gradient(circle at 30% 25%, white, #d4d4d4 75%); border: 1px solid #999; }
+.point.dead .stone { opacity: .4; }
+.point .mark { position: absolute; z-index: 3; inset: 0; display: grid; place-items: center; font-size: clamp(9px, 2vw, 18px); color: #b51c26; font-weight: 900; pointer-events: none; }
+.point.seki .mark { color: #1763d1; }
+.point.territory-black .dot, .point.territory-white .dot { position: absolute; width: 27%; height: 27%; inset: 36.5%; z-index: 1; background: #111; border: 1px solid #444; }
+.point.territory-white .dot { background: white; }
+.point.last .stone { outline: 2px solid #db3e34; outline-offset: -5px; }
+.point:focus-visible { outline: 2px solid #2468e6; z-index: 4; }
+.point.group .stone { outline: 2px solid #1666d2; outline-offset: -3px; }
+.point.liberty { background: #4c9f8270; }
+.scoring { margin-top: 20px; background: #f7faf5; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 9px 6px; border-bottom: 1px solid #dce5d9; overflow-wrap: anywhere; }
+caption { text-align: left; font-weight: 700; margin-bottom: 8px; }
+details { margin-top: 20px; }
+summary { cursor: pointer; font-weight: 700; }
+#move-list { max-height: 280px; overflow-y: auto; }
+#group-info { font-size: 14px; min-height: 44px; }
+footer { text-align: center; color: #526458; font-size: 12px; padding: 22px; }
+[hidden] { display: none !important; }
+@media (max-width: 480px) {
+  main { padding: 13px 10px 28px; }
+  section { padding: 13px; }
+  .board { border-width: 5px; }
+  .stone { inset: 0; }
+  th, td { padding: 8px 3px; font-size: 12px; }
+  .settings label { flex: 1 1 42%; min-width: 0; }
+}
